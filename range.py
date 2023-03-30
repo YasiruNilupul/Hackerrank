@@ -1,23 +1,14 @@
-first=input().split()
-first=list(map(int, first))
-m=first[1]
-k=first[0]
-
-
-
-all_lists=[]
-for i in range(k):
-    list1=input().split()
-    list1=list(map(int, list1))
-    list1.pop(0)
-    all_lists.append(list1[:])
-
+k=3
+m=10000
+list1=[5,4]
+list2=[7,8,9]
+list3=[5,7,8,9,10]
 s=0
+x=10
 high_s=0
-
-for i in all_lists[0]:
-     for j in all_lists[0]:
-         for l in all_lists[0]:
+for i in list1:
+    for j in list2:
+        for l in list3:
             s=i**2+j**2+l**2
             s=s%m
             if s>high_s:
