@@ -16,8 +16,8 @@ s=0
 high_s=0
 
 for i in all_lists[0]:
-     for j in all_lists[0]:
-         for l in all_lists[0]:
+     for j in all_lists[1]:
+         for l in all_lists[2]:
             s=i**2+j**2+l**2
             s=s%m
             if s>high_s:
